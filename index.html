@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muneeb Ashraf | Personal Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#0b1120;color:#e5e7eb;line-height:1.7}
+    a{text-decoration:none;color:inherit}
+
+    header{background:#020617;position:sticky;top:0;z-index:100}
+    nav{max-width:1100px;margin:auto;padding:1rem;display:flex;justify-content:space-between;align-items:center}
+    nav h1{color:#38bdf8;font-size:1.4rem}
+    nav ul{list-style:none;display:flex;gap:1.2rem}
+    nav ul li a:hover{color:#38bdf8}
+
+    section{max-width:1100px;margin:auto;padding:4rem 1rem}
+    h2{font-size:2.2rem;text-align:center;margin-bottom:2rem}
+
+    .hero{text-align:center;padding:5rem 1rem}
+    .hero h2 span{color:#38bdf8}
+    .hero p{max-width:750px;margin:1rem auto}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+    .card{background:#020617;padding:1.5rem;border-radius:14px;transition:.3s}
+    .card:hover{transform:translateY(-6px);box-shadow:0 12px 25px rgba(56,189,248,.25)}
+    .card h3{color:#38bdf8;margin-bottom:.5rem}
+
+    .skills{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center}
+    .skill{border:1px solid #38bdf8;padding:.5rem 1rem;border-radius:999px}
+
+    footer{background:#020617;text-align:center;padding:1.5rem}
+
+    @media(max-width:768px){nav ul{display:none}}
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Muneeb Ashraf</h1>
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#background">Background</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="intro" class="hero">
+  <h2>Hello, I'm <span>Muneeb Ashraf</span></h2>
+  <p>A motivated Computer Science student and developer passionate about building responsive web applications, Android apps, and full‑stack solutions. My ambition is to grow as a professional software engineer and contribute to impactful real‑world projects.</p>
+</section>
+
+<section id="background">
+  <h2>Background</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Education</h3>
+      <p>BS Computer Science (7th Semester)<br>Government College University Faisalabad</p>
+    </div>
+    <div class="card">
+      <h3>Certifications</h3>
+      <p>Full Stack Web Development<br>React Basics<br>Database & MongoDB Essentials</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card"><h3>Facebook Clone</h3><p>UI clone showcasing responsive layouts and component‑based design using HTML, CSS, and JavaScript.</p></div>
+    <div class="card"><h3>Netflix Clone</h3><p>Streaming platform UI with cards, banners, and responsive grid structure.</p></div>
+    <div class="card"><h3>Spotify Clone</h3><p>Music player interface with playlists and controls.</p></div>
+    <div class="card"><h3>Instagram Login Clone</h3><p>Pixel‑perfect authentication page using modern CSS techniques.</p></div>
+    <div class="card"><h3>Hydro Business Website</h3><p>Professional multi‑section website for a business use case.</p></div>
+    <div class="card"><h3>Weather App</h3><p>Real‑time weather application using public APIs and JavaScript.</p></div>
+    <div class="card"><h3>Todo List App</h3><p>CRUD‑based task manager with local storage.</p></div>
+    <div class="card"><h3>MongoDB CRUD App</h3><p>Full‑stack application using MongoDB, Express, Node.js.</p></div>
+    <div class="card"><h3>React Components</h3><p>Reusable modal, popup, carousel, and image slider components.</p></div>
+    <div class="card"><h3>Utility Tools</h3><p>Gradient generator, slugify tool, random quote generator.</p></div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">HTML</div><div class="skill">CSS</div><div class="skill">JavaScript</div>
+    <div class="skill">React</div><div class="skill">Node.js</div><div class="skill">MongoDB</div>
+    <div class="skill">Java</div><div class="skill">Android Studio</div><div class="skill">REST APIs</div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="card" style="max-width:700px;margin:auto;text-align:center">
+    <p>Academic and self‑driven project experience including frontend development, backend integration, API handling, and Android application development.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p style="text-align:center">Email: muneebashrafrajpoot@gmail.com<br>
+   www.linkedin.com/in/muneeb-ashraf-rajpoot-842450398
+   <br> 
+   <a href="https://github.com/Muneeb187">Muneeb187</a></p>
+
+</section>
+
+<footer>
+  <p>© 2026 Muneeb Ashraf — Personal Portfolio</p>
+</footer>
+
+<script>
+  // Smooth scroll for navigation links
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      document.querySelector(targetId).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  // Dynamic year update in footer
+  const footer = document.querySelector('footer p');
+  const year = new Date().getFullYear();
+  footer.innerHTML = `© ${year} Muneeb Ashraf — Personal Portfolio`;
+</script>
+
+</body>
+</html>
